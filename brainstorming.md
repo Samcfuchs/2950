@@ -41,6 +41,8 @@ https://developer.valvesoftware.com/wiki/Steam_Web_API#GetGlobalAchievementPerce
 
 https://steamcommunity.com/dev
 
+Want to compare new games, and prices of games and how their playerbase has changed over time
+
 
 ### Idea 4
 
