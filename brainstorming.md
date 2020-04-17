@@ -48,6 +48,10 @@ Want to compare new games, and prices of games and how their playerbase has chan
 
 https://play.usaultimate.org/teams/events/team_rankings/?RankSet=College-Men
 
+Would need to navigate into each division for YCC along with multiple years.
+
 https://play.usaultimate.org/events/2019-US-Open-Club-Championship/
+
+
 
 ### Idea 5
