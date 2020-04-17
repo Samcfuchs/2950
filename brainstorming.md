@@ -19,7 +19,12 @@ predict team-level outcomes. Would be a fair amount of web-scraping. Another
 challenge is associating the players with their teams by year. Each team has a
 roster listed, but it's not listed by year and it might be difficult to parse.
 
-### Idea 2
+### Idea 2: Reddit
+
+Reddit has a *very* comprehensive API that makes it relatively easy to extract
+big datasets. We could build a dataset from that API without too much trouble
+and predict, for example, how many upvotes a post gets or something...maybe we
+could find a domain-appropriate complement dataset to cross-compare.
 
 ### Idea 3
 
