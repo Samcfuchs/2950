@@ -10,8 +10,8 @@ credit. Would be neat if we can find an ultimate-related data set!
 
 ### Idea 1: AUDL Data
 
-All-time player data: <https://theaudl.com/stats/players-all-time>
-All-time team data: <https://theaudl.com/stats/team>
+- All-time player data: <https://theaudl.com/stats/players-all-time>
+- All-time team data: <https://theaudl.com/stats/team>
 
 Has stats for a few hundred players that shouldn't be too hard to scrape. AUDL
 also has per-season team stats. We could try to use player performance data to
