@@ -4,9 +4,10 @@ Repository link: <https://github.com/samcfuchs/2950.git>
 
 ## Dataset Ideas
 
-Note: we can find a dataset on <http://Kaggle.com> but I think that if we can find a
-more challenging data retrieval/processing task we will probably get more
-credit. Would be neat if we can find an ultimate-related data set!
+Note: we can find a dataset on <http://Kaggle.com> but I think that if we can
+find a more challenging data retrieval/processing task we will probably get more
+credit and build a better project. Would be neat if we can find an
+ultimate-related data set!
 
 ### Idea 1: AUDL Data
 
@@ -28,30 +29,31 @@ could find a domain-appropriate complement dataset to cross-compare.
 
 ### Idea 3: Videogame playtime during the Quarantine
 
-https://steamdb.info/app/753/graphs/
-Gives data from when steam was first made, can be filtered in order to only start at a certain data
+<https://steamdb.info/app/753/graphs/>
 
-Additionally shows games with certain player counts so can do data on games based on price
+Gives data from when steam was first made, can be filtered in order to only
+start at a certain data
+
+Additionally shows games with certain player counts so can do data on games
+based on price
 
 Can look at games that were just released to see how many players they have
-(https://store.steampowered.com/stats/Steam-Game-and-Player-Statistics)
-(https://steamcharts.com/top)
 
-https://developer.valvesoftware.com/wiki/Steam_Web_API#GetGlobalAchievementPercentagesForApp_.28v0001.29 = how to get game data?
+(<https://store.steampowered.com/stats/Steam-Game-and-Player-Statistics>)
 
-https://steamcommunity.com/dev
+(<https://steamcharts.com/top>)
+
+<https://developer.valvesoftware.com/wiki/Steam_Web_API#GetGlobalAchievementPercentagesForApp_.28v0001.29> = how to get game data?
+
+<https://steamcommunity.com/dev>
 
 Want to compare new games, and prices of games and how their playerbase has changed over time
 
-
 ### Idea 4
 
-https://play.usaultimate.org/teams/events/team_rankings/?RankSet=College-Men
+- <https://play.usaultimate.org/teams/events/team_rankings/?RankSet=College-Men>
+- <https://play.usaultimate.org/events/2019-US-Open-Club-Championship/>
 
 Would need to navigate into each division for YCC along with multiple years.
-
-https://play.usaultimate.org/events/2019-US-Open-Club-Championship/
-
-
 
 ### Idea 5
