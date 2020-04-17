@@ -19,7 +19,22 @@ predict team-level outcomes. Would be a fair amount of web-scraping. Another
 challenge is associating the players with their teams by year. Each team has a
 roster listed, but it's not listed by year and it might be difficult to parse.
 
-### Idea 2
+### Idea 2: Videogame Playtime during the Quarantine
+
+https://steamdb.info/app/753/graphs/
+Gives data from when steam was first made, can be filtered in order to only start at a certain data
+
+Additionally shows games with certain player counts so can do data on games based on price
+
+Can look at games that were just released to see how many players they have
+(https://store.steampowered.com/stats/Steam-Game-and-Player-Statistics)
+(https://steamcharts.com/top)
+
+https://developer.valvesoftware.com/wiki/Steam_Web_API#GetGlobalAchievementPercentagesForApp_.28v0001.29 = how to get game data?
+
+https://steamcommunity.com/dev
+
+
 
 ### Idea 3
 
