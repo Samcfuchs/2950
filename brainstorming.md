@@ -46,4 +46,8 @@ Want to compare new games, and prices of games and how their playerbase has chan
 
 ### Idea 4
 
+https://play.usaultimate.org/teams/events/team_rankings/?RankSet=College-Men
+
+https://play.usaultimate.org/events/2019-US-Open-Club-Championship/
+
 ### Idea 5
