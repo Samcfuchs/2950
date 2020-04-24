@@ -15,7 +15,7 @@
 ### AUDL Team page (Sam)
 
 - [X] Fetch
-- [ ] Scrape
+- [X] Scrape
 
 ### Roster Pages (Max)
 
