@@ -20,8 +20,14 @@ def write_html(url, filename):
     with open(filename, 'w') as f:
         f.write(r.text)
 
-#write_html(*team_data_params)
+# Fetch team statistics
+def get_team_stats():
+    write_html(*team_data_params)
 
-for page in range(0,77):
-    time.sleep(1)
-    write_html(*list(map(lambda s: s.format(n=page), player_data_params)))
+# Fetch all-time player statistics
+def get_alltime_player_stats():
+    for page in range(0,77):
+        time.sleep(1)
+        url = player_data_params[0].format(n=page)
+        filename = player_data_params[1].format(n=page)
+        write_html(url, filename)
