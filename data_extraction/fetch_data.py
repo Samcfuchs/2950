@@ -27,3 +27,10 @@ def get_alltime_player_stats():
         url = base_url.format(n=page)
         filename = base_filename.format(n=page)
         write_html(url, filename)
+
+# Get team listing page
+def get_team_page():
+    url = "https://theaudl.com/league/teams"
+    filename = "web/teams.html"
+
+    write_html(url, filename)
