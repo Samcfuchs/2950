@@ -19,11 +19,11 @@ def get_team_stats():
 
 # Fetch all-time player statistics
 def get_alltime_player_stats():
-    url = "https://theaudl.com/stats/players-all-time?page={n}",
-    filename = "web/players/AUDL_player_stats_{n}.html"
+    base_url = "https://theaudl.com/stats/players-all-time?page={n}"
+    base_filename = "web/players/AUDL_player_stats_{n}.html"
     
     for page in range(0,77):
         time.sleep(1)
-        url = player_data_params[0].format(n=page)
-        filename = player_data_params[1].format(n=page)
+        url = base_url.format(n=page)
+        filename = base_filename.format(n=page)
         write_html(url, filename)
