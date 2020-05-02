@@ -29,7 +29,7 @@ for team in teams['link']:
 
         player_name.append(name)
 
-        team_column.append(team)
+        team_column.append(team[1:])
 
 data = [team_column, player_name]
 
