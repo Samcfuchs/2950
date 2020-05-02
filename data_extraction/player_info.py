@@ -12,13 +12,20 @@ for team in teams['link']:
     in_filename = "web/players" + team + ".html"
 
 
+
     f = open(in_filename, "r").read()
     soup = BeautifulSoup(f, "lxml")
 
     general = soup.find("ul", class_= "views-fluid-grid-list")
+
+    if general is None:
+        continue
+
     general = general.find_all("li")
     for li in general :
         name = li.find("div", class_="views-field-player-field-player-display-name").find("span").get_text()
+
+        print(name)
 
         player_name.append(name)
 
@@ -26,5 +33,5 @@ for team in teams['link']:
 
 data = [team_column, player_name]
 
-df = pd.DataFrame(data)
+df = pd.DataFrame({"Team": team_column, "Player": player_name})
 df.to_csv(out_filename)
