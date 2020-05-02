@@ -1,6 +1,6 @@
 # Data folders
-/web
-/data
+/web/
+/data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -17,3 +17,5 @@ ipython_config.py
 # Environments
 .env
 env/
+
+/.vscode/

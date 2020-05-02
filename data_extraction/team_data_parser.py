@@ -3,10 +3,11 @@ import re
 import pandas as pd
 
 in_filename = "web/AUDL_team_stats.html"
-out_filename = "data/team_data_1.csv"
+out_filename = "data/team_data.csv"
 
 f = open(in_filename, 'r').read()
-soup = BeautifulSoup(f, 'lxml')
+soup = BeautifulSoup(f, 'lxml') 
+f.close()
 
 table = soup.find('table', class_='views-table')
 headers = table.find('thead').find_all('th')
