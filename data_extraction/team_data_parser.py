@@ -6,8 +6,7 @@ in_filename = "web/AUDL_team_stats.html"
 out_filename = "data/team_data.csv"
 
 f = open(in_filename, 'r').read()
-soup = BeautifulSoup(f, 'lxml') 
-f.close()
+soup = BeautifulSoup(f, 'lxml')
 
 table = soup.find('table', class_='views-table')
 headers = table.find('thead').find_all('th')

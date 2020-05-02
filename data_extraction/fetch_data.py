@@ -43,3 +43,12 @@ def get_player_info():
         filename = "web/players/" + team + ".html"
 
         write_html(url, filename)
+
+def get_player_stats():
+    "https://theaudl.com/stats/player-season?page={n}"
+    "web/players/AUDL_player_stats_{n}.html"
+    for n in range(23):
+        url = f"https://theaudl.com/stats/player-season?page={n}"
+        filename = f"web/player_stats/page_{n}.html"
+        
+        write_html(url, filename)

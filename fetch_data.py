@@ -22,6 +22,6 @@ def write_html(url, filename):
 
 #write_html(*team_data_params)
 
-for page in range(1,2):
+for page in range(0,23):
     time.sleep(1)
     write_html(*list(map(lambda s: s.format(n=page), player_data_params)))
