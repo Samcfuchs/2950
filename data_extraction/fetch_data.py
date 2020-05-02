@@ -1,5 +1,6 @@
 import requests
 import time
+import pandas as pd
 
 user_agent = {'User-Agent': 'Mozilla/5.0'}
 
@@ -34,3 +35,11 @@ def get_team_page():
     filename = "web/teams.html"
 
     write_html(url, filename)
+
+def get_player_info():
+    teams = pd.read_csv("data/teams.csv")
+    for team in teams['link']:
+        url = "https://theaudl.com"+ team + "/player"
+        filename = "web/players/" + team + ".html"
+
+        write_html(url, filename)
