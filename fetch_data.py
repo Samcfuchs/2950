@@ -9,7 +9,7 @@ team_data_params = [
 ]
 
 player_data_params = [
-    "https://theaudl.com/stats/players-all-time?page={n}",
+    "https://theaudl.com/stats/player-season?page={n}",
     "web/players/AUDL_player_stats_{n}.html"
 ]
 
@@ -22,6 +22,6 @@ def write_html(url, filename):
 
 #write_html(*team_data_params)
 
-for page in range(0,77):
+for page in range(1,2):
     time.sleep(1)
     write_html(*list(map(lambda s: s.format(n=page), player_data_params)))
