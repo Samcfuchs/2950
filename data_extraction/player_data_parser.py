@@ -26,7 +26,7 @@ for n in range(0,23):
         for stat in stats:
             stat_value = stat.get_text()
             if stat_value is None:
-                stat_value = stat.find('a').get_text()
+                stat_value = stat.find('a').get_text().strip()
             single_player_data.append(stat_value[1:].strip())
         all_the_data.append(single_player_data)
 
