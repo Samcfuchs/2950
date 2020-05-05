@@ -3,7 +3,7 @@
 ## Player Statistics (Leo)
 
 - [x] Fetch
-- [ ] Scrape
+- [x] Scrape
 
 ## Team Statistics
 
@@ -19,5 +19,5 @@
 
 ### Roster Pages (Max)
 
-- [ ] Fetch
-- [ ] Scrape
+- [X] Fetch
+- [X] Scrape
