@@ -19,5 +19,5 @@
 
 ### Roster Pages (Max)
 
-- [ ] Fetch
-- [ ] Scrape
+- [X] Fetch
+- [X] Scrape
