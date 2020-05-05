@@ -3,7 +3,7 @@ import re
 import pandas as pd
 
 in_filename = "web/AUDL_team_stats.html"
-out_filename = "data/team_data.csv"
+out_filename = "data/team_stats.csv"
 
 f = open(in_filename, 'r').read()
 soup = BeautifulSoup(f, 'lxml')
