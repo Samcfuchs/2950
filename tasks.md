@@ -3,7 +3,7 @@
 ## Player Statistics (Leo)
 
 - [x] Fetch
-- [ ] Scrape
+- [x] Scrape
 
 ## Team Statistics
 
