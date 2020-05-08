@@ -37,3 +37,12 @@
 ## Idea 7
 
 - Correlations between goals and d's vs assists and d's to tease out athleticism
+
+## Idea 8
+
+- Identify correlation of team stats with win percentages
+    - Does d's correlate with wins?
+
+## Idea 9
+
+- Look at top three players on a team to see if they win more.
