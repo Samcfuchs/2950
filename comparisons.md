@@ -8,3 +8,4 @@
     - I know its broad wanted to talk about it more
 
 # Idea 3
+- Completions per game or total number of completions compared to the numeber of games played
