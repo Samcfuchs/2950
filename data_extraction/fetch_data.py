@@ -8,7 +8,7 @@ def write_html(url, filename):
     r = requests.get(url, headers=user_agent)
     r.raise_for_status()
 
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         f.write(r.text)
 
 # Fetch team statistics
@@ -52,3 +52,11 @@ def get_player_stats():
         filename = f"web/player_stats/page_{n}.html"
         
         write_html(url, filename)
+
+def get_rosters():
+    url = "https://www.theaudl.com/league/news/2019-audl-active-rosters-week-1"
+    filename = "web/rosters_w/week1.html"
+    
+    write_html(url, filename)
+
+get_rosters()
