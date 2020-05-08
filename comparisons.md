@@ -31,3 +31,8 @@
 
 - Compare team stats vs aggregate player stats
   - Identify teams that outperform expectations
+
+
+## Idea 7
+
+- Correlations between goals and d's vs assists and d's to tease out athleticism
