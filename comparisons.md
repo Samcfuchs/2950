@@ -9,3 +9,6 @@
 
 # Idea 3
 - Completions per game or total number of completions compared to the numeber of games played
+
+# Idea 4
+- Number of goals scored to the number of assists
