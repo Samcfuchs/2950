@@ -11,6 +11,7 @@
 - Comparing players on a team and their overall points per game compared to the statistics of the player
   - Best statistical player may not have been the best point scorer for the team
   - I know its broad wanted to talk about it more
+  - Pick a statistic to compare that is important and compare it to goals scored
 
 ## Idea 3
 
