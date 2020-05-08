@@ -20,6 +20,7 @@
 ## Idea 4
 
 - Number of goals scored to the number of assists
+    - Compare all the players together
 
 ## Idea 5
 
