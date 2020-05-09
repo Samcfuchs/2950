@@ -45,8 +45,6 @@ def get_player_info():
         write_html(url, filename)
 
 def get_player_stats():
-    "https://theaudl.com/stats/player-season?page={n}"
-    "web/players/AUDL_player_stats_{n}.html"
     for n in range(23):
         url = f"https://theaudl.com/stats/player-season?page={n}"
         filename = f"web/player_stats/page_{n}.html"
@@ -54,9 +52,11 @@ def get_player_stats():
         write_html(url, filename)
 
 def get_rosters():
-    url = "https://www.theaudl.com/league/news/2019-audl-active-rosters-week-1"
-    filename = "web/rosters_w/week1.html"
+    url = "https://www.theaudl.com/league/news/2019-audl-active-rosters-week-{n}"
+    filename = "web/rosters_w/week_{n}.html"
     
-    write_html(url, filename)
+    for n in range(1,10):
+        print(n)
+        write_html(url.format(n=n), filename.format(n=n))
 
 get_rosters()
