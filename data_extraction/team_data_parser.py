@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
+# Scrapes the per-team season stats
+
 in_filename = "web/AUDL_team_stats.html"
 out_filename = "data/team_stats.csv"
 

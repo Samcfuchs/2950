@@ -18,16 +18,6 @@ def get_team_stats():
     
     write_html(url, filename)
 
-# Fetch all-time player statistics
-def get_alltime_player_stats():
-    base_url = "https://theaudl.com/stats/players-all-time?page={n}"
-    base_filename = "web/players/AUDL_player_stats_{n}.html"
-    
-    for page in range(0,77):
-        time.sleep(1)
-        url = base_url.format(n=page)
-        filename = base_filename.format(n=page)
-        write_html(url, filename)
 
 # Get team listing page
 def get_team_page():
@@ -36,14 +26,7 @@ def get_team_page():
 
     write_html(url, filename)
 
-def get_player_info():
-    teams = pd.read_csv("data/teams.csv")
-    for team in teams['link']:
-        url = "https://theaudl.com"+ team + "/player"
-        filename = "web/players/" + team + ".html"
-
-        write_html(url, filename)
-
+# Get individual stats tables for 2019
 def get_player_stats():
     for n in range(23):
         url = f"https://theaudl.com/stats/player-season?page={n}"
@@ -51,6 +34,7 @@ def get_player_stats():
         
         write_html(url, filename)
 
+# Fetch weekly roster blog posts
 def get_rosters():
     url = "https://www.theaudl.com/league/news/2019-audl-active-rosters-week-{n}"
     filename = "web/rosters_w/week_{n}.html"

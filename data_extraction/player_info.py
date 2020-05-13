@@ -31,7 +31,5 @@ for team in teams['link']:
 
         team_column.append(team[1:])
 
-data = [team_column, player_name]
-
 df = pd.DataFrame({"Team": team_column, "Player": player_name})
 df.to_csv(out_filename)
