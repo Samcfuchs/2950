@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
+# Parses the roster from each individual team page first.
+# This script is deprecated, use roster_parser instead.
+
 team_column = []
 player_name = []
 
