@@ -13,7 +13,7 @@ def write_html(url, filename):
 
 # Fetch team statistics
 def get_team_stats():
-    url = "https://theaudl.com/stats/team?year=2",
+    url = "https://theaudl.com/stats/team?year=2"
     filename = "web/AUDL_team_stats.html"
     
     write_html(url, filename)
