@@ -34,7 +34,7 @@ parse_row = lambda row: [d.get_text().strip() for d in row.find_all('td')]
 data = map(parse_row, rows)
 
 # Convert the data into a dataframe, use the headers as column names
-df = pd.DataFrame(data, columns=headers)
+df = pd.DataFrame(list(data), columns=headers)
 
 # Export dataframe to a csv
 df.to_csv(out_filename)

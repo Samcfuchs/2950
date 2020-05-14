@@ -19,5 +19,5 @@ def parse_cell(td):
 
 data = map(parse_cell, nodes)
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(list(data))
 df.to_csv(out_filename)
