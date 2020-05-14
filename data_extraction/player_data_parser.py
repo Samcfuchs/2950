@@ -2,9 +2,12 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
+# Parses individual player statistics
+# Run fetch_data.get_player_stats() first.
+
 all_the_data = []
 for n in range(0,23):
-    in_filename = "web/players/AUDL_player_stats_" +str(n) + ".html"
+    in_filename = "web/players/AUDL_player_stats_" + str(n) + ".html"
 
     f = open(in_filename, 'r').read()
     soup = BeautifulSoup(f, 'html.parser')
@@ -32,6 +35,6 @@ for n in range(0,23):
 
 player_stats_df = pd.DataFrame(all_the_data, columns = headers)
 
-player_stats_df.to_csv("player_stats_data.csv")
+player_stats_df.to_csv("data/player_stats.csv")
 
 

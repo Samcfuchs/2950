@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 
+# Parses team names from team listing page.
+# Generates a listing of team names and their abbreviated representations
+# Run fetch_data.get_team_page() first.
+
 in_filename = "web/teams.html"
 out_filename = "data/teams.csv"
 

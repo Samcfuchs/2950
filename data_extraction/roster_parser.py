@@ -4,6 +4,7 @@ import pandas as pd
 import sys
 
 # Run fetch_data.get_rosters() first
+# Parses the weekly roster posts to extract teams and their players
 
 in_filename = "web/rosters_w/week_{}.html"
 out_filename = "data/rosters.csv"

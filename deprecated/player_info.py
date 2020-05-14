@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
+# Parses the roster from each individual team page first.
+# This script is deprecated, use roster_parser instead.
+
 team_column = []
 player_name = []
 
@@ -30,8 +33,6 @@ for team in teams['link']:
         player_name.append(name)
 
         team_column.append(team[1:])
-
-data = [team_column, player_name]
 
 df = pd.DataFrame({"Team": team_column, "Player": player_name})
 df.to_csv(out_filename)
