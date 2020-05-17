@@ -7,7 +7,7 @@ import pandas as pd
 
 all_the_data = []
 for n in range(0,23):
-    in_filename = "web/players/AUDL_player_stats_" + str(n) + ".html"
+    in_filename = "web/player_stats/page_" + str(n) + ".html"
 
     f = open(in_filename, 'r').read()
     soup = BeautifulSoup(f, 'html.parser')
