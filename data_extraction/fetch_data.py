@@ -43,4 +43,4 @@ def get_rosters():
         print(n)
         write_html(url.format(n=n), filename.format(n=n))
 
-get_rosters()
+get_player_stats()
