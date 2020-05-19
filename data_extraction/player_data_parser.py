@@ -35,6 +35,6 @@ for n in range(0,23):
 
 player_stats_df = pd.DataFrame(all_the_data, columns = headers)
 
-player_stats_df.to_csv("data/player_stats.csv")
+player_stats_df.to_csv("data/player_stats.csv", encoding='utf-8')
 
 

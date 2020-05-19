@@ -50,4 +50,4 @@ def get_rosters():
     
     print("Saved roster pages to web/rosters_w")
 
-get_rosters()
+get_player_stats()
