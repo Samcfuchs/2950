@@ -18,6 +18,8 @@ def get_team_stats():
     
     write_html(url, filename)
 
+    print("Saved team stats to web/AUDL_team_stats.html")
+
 
 # Get team listing page
 def get_team_page():
@@ -26,6 +28,8 @@ def get_team_page():
 
     write_html(url, filename)
 
+    print("Saved team page to web/teams.html")
+
 # Get individual stats tables for 2019
 def get_player_stats():
     for n in range(23):
@@ -33,6 +37,8 @@ def get_player_stats():
         filename = f"web/player_stats/page_{n}.html"
         
         write_html(url, filename)
+    
+    print("Saved player stats to web/player_stats")
 
 # Fetch weekly roster blog posts
 def get_rosters():
@@ -40,7 +46,8 @@ def get_rosters():
     filename = "web/rosters_w/week_{n}.html"
     
     for n in range(1,10):
-        print(n)
         write_html(url.format(n=n), filename.format(n=n))
+    
+    print("Saved roster pages to web/rosters_w")
 
 get_rosters()

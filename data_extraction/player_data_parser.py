@@ -7,10 +7,10 @@ import pandas as pd
 
 all_the_data = []
 for n in range(0,23):
-    in_filename = "web/players/AUDL_player_stats_" + str(n) + ".html"
+    in_filename = "web/player_stats/page_" + str(n) + ".html"
 
-    f = open(in_filename, 'r').read()
-    soup = BeautifulSoup(f, 'html.parser')
+    f = open(in_filename, 'r', encoding='utf-8').read()
+    soup = BeautifulSoup(f, 'lxml')
 
     if n ==0:
         stat_names = soup.find_all('th', class_ = "views-label2-tooltip-row-0")
