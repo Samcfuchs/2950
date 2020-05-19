@@ -7,9 +7,9 @@ import pandas as pd
 
 all_the_data = []
 for n in range(0,23):
-    in_filename = "web/players/AUDL_player_stats_" + str(n) + ".html"
+    in_filename = "web/player_stats/page_" + str(n) + ".html"
 
-    f = open(in_filename, 'r').read()
+    f = open(in_filename, 'r', encoding='utf-8').read()
     soup = BeautifulSoup(f, 'html.parser')
 
     if n ==0:
@@ -35,6 +35,6 @@ for n in range(0,23):
 
 player_stats_df = pd.DataFrame(all_the_data, columns = headers)
 
-player_stats_df.to_csv("data/player_stats.csv")
+player_stats_df.to_csv("data/player_stats.csv", encoding='utf-8')
 
 
